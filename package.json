@@ -1,0 +1,26 @@
+{
+  "name": "webpack-dnx-browsersync",
+  "version": "1.0.0",
+  "description": "A webpack plugin that runs the DNX web server in watch mode and integrates with browserSync, allowing webpack, dnx and browserSync to all work in harmony, reloading when any files change on the front or back end.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axefrog/webpack-dnx-browsersync.git"
+  },
+  "keywords": [
+    "webpack",
+    "dnx",
+    "browsersync",
+    "asp.net"
+  ],
+  "author": "Nathan Ridley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axefrog/webpack-dnx-browsersync/issues"
+  },
+  "homepage": "https://github.com/axefrog/webpack-dnx-browsersync#readme",
+  "peerDependencies": {
+    "browser-sync": "^2.7.0",
+    "webpack": "^1.9.0"
+  }
+}
