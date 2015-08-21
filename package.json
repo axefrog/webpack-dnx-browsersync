@@ -1,6 +1,6 @@
 {
   "name": "webpack-dnx-browsersync",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A webpack plugin that runs the DNX web server in watch mode and integrates with browserSync, allowing webpack, dnx and browserSync to all work in harmony, reloading when any files change on the front or back end.",
   "main": "index.js",
   "repository": {
