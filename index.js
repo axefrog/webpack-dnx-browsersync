@@ -15,6 +15,7 @@ function DnxBrowserSyncPlugin(options) {
 
 DnxBrowserSyncPlugin.prototype.apply = function(compiler) {
   var self = this;
+  var child;
 
   function startDnx() {
     child = child_process.spawn("dnx", ['.', '--watch', self.options.dnx.command], {
@@ -29,7 +30,9 @@ DnxBrowserSyncPlugin.prototype.apply = function(compiler) {
   }
   
   compiler.plugin('watch-run', function (watching, callback) {
-    startDnx();
+    if(!child) {
+      startDnx();
+    }
     self.isWebpackWatching = true;
     callback(null, null);
   });
